@@ -9,9 +9,9 @@ defmodule Onlinechat do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      supervisor(Onlinechat.Repo, []),
+      # supervisor(Onlinechat.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(Onlinechat.Endpoint, []),
+      supervisor(Onlinechat.Endpoint, [])
       # Start your own worker by calling: Onlinechat.Worker.start_link(arg1, arg2, arg3)
       # worker(Onlinechat.Worker, [arg1, arg2, arg3]),
     ]

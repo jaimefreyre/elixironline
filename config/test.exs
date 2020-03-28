@@ -10,10 +10,10 @@ config :onlinechat, Onlinechat.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-# config :onlinechat, Onlinechat.Repo,
-#   adapter: Ecto.Adapters.Postgres,
-#   username: "postgres",
-#   password: "postgres",
-#   database: "onlinechat_test",
-#   hostname: "localhost",
-#   pool: Ecto.Adapters.SQL.Sandbox
+config :onlinechat, Onlinechat.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "onlinechat_test",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
